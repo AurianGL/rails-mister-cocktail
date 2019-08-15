@@ -1,0 +1,29 @@
+// Place all the styles related to the cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.index {
+    color: $yolo;
+    font-family: 'Monoton', cursive;
+
+    h1, h2, h3{
+      font-family: 'Lobster', cursive;
+    }
+
+    .navbar {
+      background-color: linear-gradient(to bottom, #ff32f1 0%,#2989d8 33%,#207cca 65%,#7db9e8 100%);
+    }
+
+    a {
+      color: $yolo;
+      text-decoration: none;
+    }
+
+    .cock-card {
+      min-height: 400px;
+      width: auto;
+      background-size: cover;
+      background-position: center;
+
+    }
+
+}

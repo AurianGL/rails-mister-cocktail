@@ -15,13 +15,17 @@ Ingredient.destroy_all
 url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
 ingredients_serialized = open(url).read
 ingredients = JSON.parse(ingredients_serialized)
-puts ingredients
+
 
 ingredients["drinks"].each do |item|
-  puts "in the boucle"
+
   Ingredient.create!(
     name: item["strIngredient1"]
   )
 end
+
+
+puts "destroy cocktails"
+Cocktail.destroy_all
 
 puts "finished"
