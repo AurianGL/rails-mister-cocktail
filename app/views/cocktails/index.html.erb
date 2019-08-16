@@ -4,14 +4,17 @@
     <h3>Drink like you were a hollywood star</h3>
   </div>
 
-  <div class="container d-flex flex-wrap col-10">
+  <div class="container d-flex flex-wrap col-10 m-">
 
     <% @cocktails.each do |cocktail| %>
-          <div class="col-4 cock-card" { background-image: linear-gradient(180deg, rgba(2,0,36,0.8822055137844611) 0%, rgba(108,16,104,0.2907268170426065) 81%, rgba(199,255,244,0.16541353383458646) 100%) url(<%= cocktail.image %>) }>
-          <div class="mb-3" >
-            <span><%= link_to cocktail.name , cocktail %></span>
+        <div class="container-fluid col-4 ">
+          <div class="cock-card m-3 d-flex justify-content-center align-items-center" style="background-image: linear-gradient(180deg, rgba(199,255,244,0.16541353383458646) 0%, rgba(2,0,36,0.5326505602240896) 49%, rgba(108,16,104,0.15449929971988796) 100%), url('<%= cocktail.image%>')">
+            <div class="mb-3" >
+              <span ><%= link_to cocktail.name.to_s , cocktail %></span>
+            </div>
           </div>
         </div>
+
 
 
     <% end %>

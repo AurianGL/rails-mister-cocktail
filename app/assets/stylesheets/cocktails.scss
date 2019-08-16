@@ -3,7 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .index {
     color: $yolo;
-    font-family: 'Monoton', cursive;
+    font-family: 'Lobster', cursive;
+
+    span{
+      font-size: 32px;
+      text-shadow: 0px 0px 19px #E33DEA;
+    }
 
     h1, h2, h3{
       font-family: 'Lobster', cursive;
@@ -23,7 +28,7 @@
       width: auto;
       background-size: cover;
       background-position: center;
-
+      border-radius: 20px;
     }
 
 }
