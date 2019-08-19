@@ -1,16 +1,16 @@
 <div class="index">
   <div class="container-fluid text-center p-5">
-    <h1>One for the road</h1>
-    <h3>Drink like you were a hollywood star</h3>
+    <h1 class="glow">One for the road</h1>
+    <h3 class="glow">Drink like you were a hollywood star</h3>
   </div>
 
-  <div class="container d-flex flex-wrap col-10 m-">
+  <div class="container d-flex flex-wrap col-10">
 
     <% @cocktails.each do |cocktail| %>
-        <div class="container-fluid col-4 ">
+        <div class="container-fluid col-4">
           <div class="cock-card m-3 d-flex justify-content-center align-items-center" style="background-image: linear-gradient(180deg, rgba(199,255,244,0.16541353383458646) 0%, rgba(2,0,36,0.5326505602240896) 49%, rgba(108,16,104,0.15449929971988796) 100%), url('<%= cl_image_path cocktail.photo %>')">
             <div class="mb-3" >
-              <span ><%= link_to cocktail.name , cocktail %></span>
+              <span class="glow" ><%= link_to cocktail.name , cocktail %></span>
             </div>
           </div>
         </div>
@@ -19,8 +19,8 @@
     <% end %>
   </div>
 
-  <div class="text-center p-5" >
-      <h2> <%= link_to 'New cocktail', new_cocktail_path %></h2>
+  <div class=" text-center m-5" >
+      <span class="c-button p-3"> <%= link_to 'New cocktail', new_cocktail_path %></span>
   </div>
 </div>
 

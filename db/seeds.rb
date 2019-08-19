@@ -28,4 +28,42 @@ end
 puts "destroy cocktails"
 Cocktail.destroy_all
 
+Cocktail.create!(
+  name: "AM",
+  photo: File.open(File.join(Rails.root, "app/assets/images/am.jpg"))
+  )
+Cocktail.create!(
+  name: "Com Truise",
+  photo: File.open(File.join(Rails.root, "app/assets/images/com.jpg"))
+  )
+Cocktail.create!(
+  name: "Casino",
+  photo: File.open(File.join(Rails.root, "app/assets/images/casino.jpg"))
+  )
+Cocktail.create!(
+  name: "Joe Pesci",
+  photo: File.open(File.join(Rails.root, "app/assets/images/pesci.jpg"))
+  )
+Cocktail.create!(
+  name: "BRMC",
+  photo: File.open(File.join(Rails.root, "app/assets/images/brando.jpg"))
+  )
+Cocktail.create!(
+  name: "White Russian",
+  photo: File.open(File.join(Rails.root, "app/assets/images/the_dude.jpeg"))
+  )
+Cocktail.create!(
+  name: "in the tube",
+  photo: File.open(File.join(Rails.root, "app/assets/images/russel.png"))
+  )
+Cocktail.create!(
+  name: "Gladiator",
+  photo: File.open(File.join(Rails.root, "app/assets/images/reed.jpg"))
+  )
+Cocktail.create!(
+  name: "1st Rule",
+  photo: File.open(File.join(Rails.root, "app/assets/images/tyler.jpg"))
+  )
+
+
 puts "finished"
